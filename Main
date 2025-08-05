@@ -1,0 +1,31 @@
+class company {
+    String nameofcom;
+    String city;
+
+    company(String nameofcom, String city) {
+        this.nameofcom = nameofcom;
+        this.city = city;
+    }
+}
+
+class HR extends company {
+    HR(String nameofcom, String city) {
+        super(nameofcom, city);
+    }
+}
+
+class Finance extends company {
+    Finance(String nameofcom, String city) {
+        super(nameofcom, city);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        HR hrDept = new HR("ExampleCorp", "New York");
+        Finance finDept = new Finance("ExampleCorp", "New York");
+
+        System.out.println("HR Department Company: " + hrDept.nameofcom + ", City: " + hrDept.city);
+        System.out.println("Finance Department Company: " + finDept.nameofcom + ", City: " + finDept.city);
+    }
+}
