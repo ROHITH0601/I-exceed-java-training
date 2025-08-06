@@ -22,7 +22,7 @@ class Address {
 
 public class Main {
     public static void main(String[] args) {
-        Address myAddress = new Address("Main St", "Chennai", 23, 600001);
+        Address myAddress = new Address("Near 1st street indirangar", "Bengaluru", 24, 560082);
         myAddress.displayAddress();
     }
 }
